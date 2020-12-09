@@ -11,14 +11,14 @@ import CoreMotion
 class PedometerViewController: UIViewController {
 
     @IBOutlet weak var collectionView: UICollectionView!
-    var pedometer:CMPedometer!
+    var pedometer: CMPedometer!
     
     var motionInfomations: [KeyValue] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         configureCollectionView()
-        configureMotionManager()
+        configurePedometerManager()
     }
     
     private func configureCollectionView() {
@@ -27,7 +27,7 @@ class PedometerViewController: UIViewController {
         collectionView.register(KeyValueCell.nib(), forCellWithReuseIdentifier: KeyValueCell.reuseIdentifier)
     }
     
-    private func configureMotionManager() {
+    private func configurePedometerManager() {
         pedometer = CMPedometer()
         guard let pedometer = pedometer else { return }
         if CMPedometer.isStepCountingAvailable() {
@@ -38,7 +38,7 @@ class PedometerViewController: UIViewController {
             pedometer.startUpdates(from: from, withHandler: { [weak self] (pedometerData: CMPedometerData?, error: Error?) in
                 guard let pedometerData = pedometerData else { return }
                 DispatchQueue.main.async {
-                    self?.setSedometerInfomation(pedometerData)
+                    self?.setPedometerInfomation(pedometerData)
                 }
                 
             })
@@ -48,7 +48,7 @@ class PedometerViewController: UIViewController {
 }
 
 extension PedometerViewController {
-    func setSedometerInfomation(_ pedometerData: CMPedometerData) {
+    func setPedometerInfomation(_ pedometerData: CMPedometerData) {
         motionInfomations.removeAll()
         motionInfomations.append(KeyValue(key: "歩数:", value: "\(pedometerData.numberOfSteps)", unit: "歩"))
         motionInfomations.append(KeyValue(key: "距離:", value: "\(pedometerData.distance?.toString ?? "0")", unit: "m"))
