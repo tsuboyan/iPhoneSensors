@@ -13,7 +13,7 @@ class LocationViewController: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
     var locationManager: CLLocationManager!
     
-    var locationInfomations: [KeyValue] = []
+    var locationInfomations: [KeyValue] = [KeyValue(key: "", value: "値の取得中...")]
     var visitInfomations: [KeyValue] = []
     
     override func viewDidLoad() {

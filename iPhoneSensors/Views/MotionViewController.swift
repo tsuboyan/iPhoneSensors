@@ -13,7 +13,7 @@ class MotionViewController: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
     var motionManager: CMMotionManager!
     
-    var motionInfomations: [KeyValue] = []
+    var motionInfomations: [KeyValue] = [KeyValue(key: "", value: "値の取得中...")]
     
     override func viewDidLoad() {
         super.viewDidLoad()

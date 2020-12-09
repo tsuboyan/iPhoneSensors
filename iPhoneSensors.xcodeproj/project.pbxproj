@@ -22,6 +22,8 @@
 		D7831DBA25813D64001827CF /* PedometerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7831DB925813D64001827CF /* PedometerViewController.swift */; };
 		D7831DBD25814219001827CF /* NSNumber+ToString.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7831DBC25814219001827CF /* NSNumber+ToString.swift */; };
 		D7831DC025814B09001827CF /* AltimeterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7831DBF25814B09001827CF /* AltimeterViewController.swift */; };
+		D7831DC325815025001827CF /* BrightnessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7831DC225815025001827CF /* BrightnessViewController.swift */; };
+		D7831DC6258152F0001827CF /* CGFloat+ToString.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7831DC5258152F0001827CF /* CGFloat+ToString.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +44,8 @@
 		D7831DB925813D64001827CF /* PedometerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PedometerViewController.swift; sourceTree = "<group>"; };
 		D7831DBC25814219001827CF /* NSNumber+ToString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSNumber+ToString.swift"; sourceTree = "<group>"; };
 		D7831DBF25814B09001827CF /* AltimeterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AltimeterViewController.swift; sourceTree = "<group>"; };
+		D7831DC225815025001827CF /* BrightnessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrightnessViewController.swift; sourceTree = "<group>"; };
+		D7831DC5258152F0001827CF /* CGFloat+ToString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGFloat+ToString.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +100,7 @@
 				D7831DB625813546001827CF /* MotionViewController.swift */,
 				D7831DB925813D64001827CF /* PedometerViewController.swift */,
 				D7831DBF25814B09001827CF /* AltimeterViewController.swift */,
+				D7831DC225815025001827CF /* BrightnessViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -114,6 +119,7 @@
 			children = (
 				D7831DAB25810ACA001827CF /* UIView+Xib.swift */,
 				D7831DBC25814219001827CF /* NSNumber+ToString.swift */,
+				D7831DC5258152F0001827CF /* CGFloat+ToString.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -210,10 +216,12 @@
 				D711991A257D0A6A00395189 /* TopViewController.swift in Sources */,
 				D7831DB725813546001827CF /* MotionViewController.swift in Sources */,
 				D7831DBA25813D64001827CF /* PedometerViewController.swift in Sources */,
+				D7831DC6258152F0001827CF /* CGFloat+ToString.swift in Sources */,
 				D7119916257D0A6A00395189 /* AppDelegate.swift in Sources */,
 				D7831DBD25814219001827CF /* NSNumber+ToString.swift in Sources */,
 				D7119918257D0A6A00395189 /* SceneDelegate.swift in Sources */,
 				D7831DAC25810ACA001827CF /* UIView+Xib.swift in Sources */,
+				D7831DC325815025001827CF /* BrightnessViewController.swift in Sources */,
 				D7831DA125810330001827CF /* KeyValueCell.swift in Sources */,
 				D7831DB325812B4F001827CF /* KeyValue.swift in Sources */,
 			);

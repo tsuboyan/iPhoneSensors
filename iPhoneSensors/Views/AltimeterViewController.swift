@@ -14,7 +14,7 @@ class AltimeterViewController: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
     var altimeter: CMAltimeter!
     
-    var motionInfomations: [KeyValue] = []
+    var altimeterInfomations: [KeyValue] = [KeyValue(key: "", value: "値の取得中...")]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,21 +44,21 @@ class AltimeterViewController: UIViewController {
 
 extension AltimeterViewController {
     func setAltimeterInfomation(_ altitudeData: CMAltitudeData) {
-        motionInfomations.removeAll()
-        motionInfomations.append(KeyValue(key: "高度:", value: "\(altitudeData.relativeAltitude.toString)", unit: "m"))
-        motionInfomations.append(KeyValue(key: "気圧:", value: "\(altitudeData.pressure.toString)", unit: "kPa"))
+        altimeterInfomations.removeAll()
+        altimeterInfomations.append(KeyValue(key: "高度:", value: "\(altitudeData.relativeAltitude.toString)", unit: "m"))
+        altimeterInfomations.append(KeyValue(key: "気圧:", value: "\(altitudeData.pressure.toString)", unit: "kPa"))
         collectionView.reloadData()
     }
 }
 
 extension AltimeterViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return motionInfomations.count
+        return altimeterInfomations.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: KeyValueCell.reuseIdentifier, for: indexPath) as! KeyValueCell
-        let infomation = motionInfomations[indexPath.row]
+        let infomation = altimeterInfomations[indexPath.row]
         cell.setup(key: infomation.key, value: infomation.value, unit: infomation.unit)
         return cell
     }

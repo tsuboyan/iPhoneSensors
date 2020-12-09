@@ -1,17 +1,17 @@
 //
-//  NSNumber+ToString.swift
+//  CGFloat+ToString.swift
 //  iPhoneSensors
 //
 //  Created by Atsushi Otsubo on 2020/12/10.
 //
 
-import Foundation
+import UIKit
 
-extension NSNumber {
+extension CGFloat {
     var toString: String {
         let formatter = NumberFormatter()
         formatter.numberStyle = NumberFormatter.Style.decimal
-        if let result = formatter.string(from: self) {
+        if let result = formatter.string(from: NSNumber(value: Float(self))) {
             return result
         } else {
             return ""
