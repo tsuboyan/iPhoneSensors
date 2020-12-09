@@ -18,6 +18,7 @@
 		D7831DA725810733001827CF /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7831DA625810733001827CF /* LocationViewController.swift */; };
 		D7831DAC25810ACA001827CF /* UIView+Xib.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7831DAB25810ACA001827CF /* UIView+Xib.swift */; };
 		D7831DB325812B4F001827CF /* KeyValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7831DB225812B4F001827CF /* KeyValue.swift */; };
+		D7831DB725813546001827CF /* MotionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7831DB625813546001827CF /* MotionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		D7831DA625810733001827CF /* LocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
 		D7831DAB25810ACA001827CF /* UIView+Xib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Xib.swift"; sourceTree = "<group>"; };
 		D7831DB225812B4F001827CF /* KeyValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyValue.swift; sourceTree = "<group>"; };
+		D7831DB625813546001827CF /* MotionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 				D7119919257D0A6A00395189 /* TopViewController.swift */,
 				D711991B257D0A6A00395189 /* Main.storyboard */,
 				D7831DA625810733001827CF /* LocationViewController.swift */,
+				D7831DB625813546001827CF /* MotionViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -195,6 +198,7 @@
 			files = (
 				D7831DA725810733001827CF /* LocationViewController.swift in Sources */,
 				D711991A257D0A6A00395189 /* TopViewController.swift in Sources */,
+				D7831DB725813546001827CF /* MotionViewController.swift in Sources */,
 				D7119916257D0A6A00395189 /* AppDelegate.swift in Sources */,
 				D7119918257D0A6A00395189 /* SceneDelegate.swift in Sources */,
 				D7831DAC25810ACA001827CF /* UIView+Xib.swift in Sources */,
