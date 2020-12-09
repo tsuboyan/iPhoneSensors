@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qPn-pa-lrQ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="LqR-Eb-ZDn">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
@@ -15,8 +15,61 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="8VQ-6t-BpQ">
+                                <rect key="frame" x="131" y="112" width="152" height="180"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Edj-QH-84N">
+                                        <rect key="frame" x="0.0" y="0.0" width="152" height="30"/>
+                                        <state key="normal" title="位置情報 (GPS)センサ"/>
+                                        <connections>
+                                            <segue destination="2Aq-fq-qRo" kind="show" id="E53-yL-vcQ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fDM-Ia-QER">
+                                        <rect key="frame" x="0.0" y="30" width="123" height="30"/>
+                                        <state key="normal" title="モーションセンサ"/>
+                                        <connections>
+                                            <segue destination="Xd3-q8-jUV" kind="show" id="Iuc-06-fRt"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L7l-Fw-Saw">
+                                        <rect key="frame" x="0.0" y="60" width="77" height="30"/>
+                                        <state key="normal" title="歩数センサ"/>
+                                        <connections>
+                                            <segue destination="7WN-ai-8w4" kind="show" id="YaG-NX-MEY"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0hP-Zv-hFf">
+                                        <rect key="frame" x="0.0" y="90" width="112" height="30"/>
+                                        <state key="normal" title="高度/気圧センサ"/>
+                                        <connections>
+                                            <segue destination="if5-Sj-i9o" kind="show" id="YQM-tO-NyY"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SDs-FQ-4MZ">
+                                        <rect key="frame" x="0.0" y="120" width="92" height="30"/>
+                                        <state key="normal" title="明るさセンサ"/>
+                                        <connections>
+                                            <segue destination="yNs-YL-gfN" kind="show" id="ezP-In-Uoh"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PUd-2R-6Wf">
+                                        <rect key="frame" x="0.0" y="150" width="77" height="30"/>
+                                        <state key="normal" title="近接センサ"/>
+                                        <connections>
+                                            <segue destination="qPn-pa-lrQ" kind="show" id="Aly-AA-DWC"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="8VQ-6t-BpQ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="24" id="VH4-z2-c9m"/>
+                            <constraint firstItem="8VQ-6t-BpQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qJs-dD-UKj"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="iPhoneSensors" id="DPb-CP-kLV"/>
                 </viewController>
@@ -33,16 +86,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="xvW-bU-xbY">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <subviews>
                                     <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ihd-GM-vJl">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="409"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="387"/>
                                     </mapView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jd4-u8-7F6">
-                                        <rect key="frame" x="0.0" y="409" width="414" height="409"/>
+                                        <rect key="frame" x="0.0" y="387" width="414" height="387"/>
                                         <subviews>
                                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="K7H-N6-1ZG">
-                                                <rect key="frame" x="0.0" y="0.0" width="414" height="409"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="387"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="DAr-vd-m4c">
                                                     <size key="itemSize" width="128" height="128"/>
@@ -77,6 +130,7 @@
                             <constraint firstItem="uGi-3i-Be4" firstAttribute="trailing" secondItem="xvW-bU-xbY" secondAttribute="trailing" id="vZm-rq-6hS"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="PnA-ye-dzC"/>
                     <connections>
                         <outlet property="collectionView" destination="K7H-N6-1ZG" id="cLk-iz-buP"/>
                     </connections>
@@ -94,7 +148,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Qw5-Fw-Rh6">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="7ai-KZ-14y">
                                     <size key="itemSize" width="128" height="128"/>
@@ -114,6 +168,7 @@
                             <constraint firstItem="Qw5-Fw-Rh6" firstAttribute="leading" secondItem="D4w-6f-AUj" secondAttribute="leading" id="zG1-Dn-Anq"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="quA-Qd-2fW"/>
                     <connections>
                         <outlet property="collectionView" destination="Qw5-Fw-Rh6" id="In8-Sa-Wn5"/>
                     </connections>
@@ -131,7 +186,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="IxD-BO-7IX">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="6Sm-I7-G7F">
                                     <size key="itemSize" width="128" height="128"/>
@@ -151,6 +206,7 @@
                             <constraint firstItem="W4Z-db-tts" firstAttribute="trailing" secondItem="IxD-BO-7IX" secondAttribute="trailing" id="uWq-7m-gZN"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="7nt-q8-Ohc"/>
                     <connections>
                         <outlet property="collectionView" destination="IxD-BO-7IX" id="1VG-ez-arR"/>
                     </connections>
@@ -186,7 +242,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="gpm-ti-dlz">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="3r1-IU-LvC">
                                     <size key="itemSize" width="128" height="128"/>
@@ -206,6 +262,7 @@
                             <constraint firstItem="gpm-ti-dlz" firstAttribute="top" secondItem="fEE-xF-oBa" secondAttribute="top" id="v8s-JI-ej0"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="xDr-eF-igj"/>
                     <connections>
                         <outlet property="collectionView" destination="gpm-ti-dlz" id="XR0-Dy-JnD"/>
                     </connections>
@@ -223,7 +280,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="c1C-sd-B4U">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="fQm-yM-0QC">
                                     <size key="itemSize" width="128" height="128"/>
@@ -243,6 +300,7 @@
                             <constraint firstItem="0sn-LJ-XWC" firstAttribute="trailing" secondItem="c1C-sd-B4U" secondAttribute="trailing" id="vGJ-lS-Mhc"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="rXb-Eg-SkP"/>
                     <connections>
                         <outlet property="collectionView" destination="c1C-sd-B4U" id="mBr-rx-TD3"/>
                     </connections>
@@ -260,7 +318,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="5Rc-RL-NIy">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="PWx-Tf-dEs">
                                     <size key="itemSize" width="128" height="128"/>
@@ -280,6 +338,7 @@
                             <constraint firstItem="JJ3-YM-Siq" firstAttribute="trailing" secondItem="5Rc-RL-NIy" secondAttribute="trailing" id="n6U-cy-Al8"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="r8y-ug-KAq"/>
                     <connections>
                         <outlet property="collectionView" destination="5Rc-RL-NIy" id="uk0-gX-c6N"/>
                     </connections>

@@ -80,24 +80,21 @@
 		D7119914257D0A6A00395189 /* iPhoneSensors */ = {
 			isa = PBXGroup;
 			children = (
+				D7831DCC25815ACC001827CF /* Views */,
 				D7831DAA25810AAD001827CF /* Extensions */,
 				D7831DB025812B10001827CF /* Models */,
-				D7831D942580F986001827CF /* Views */,
 				D7119915257D0A6A00395189 /* AppDelegate.swift */,
 				D7119917257D0A6A00395189 /* SceneDelegate.swift */,
 				D711991E257D0A6C00395189 /* Assets.xcassets */,
-				D7119920257D0A6C00395189 /* LaunchScreen.storyboard */,
 				D7119923257D0A6C00395189 /* Info.plist */,
 			);
 			path = iPhoneSensors;
 			sourceTree = "<group>";
 		};
-		D7831D942580F986001827CF /* Views */ = {
+		D7831D942580F986001827CF /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				D7831D98258100CC001827CF /* Common */,
 				D7119919257D0A6A00395189 /* TopViewController.swift */,
-				D711991B257D0A6A00395189 /* Main.storyboard */,
 				D7831DA625810733001827CF /* LocationViewController.swift */,
 				D7831DB625813546001827CF /* MotionViewController.swift */,
 				D7831DB925813D64001827CF /* PedometerViewController.swift */,
@@ -105,7 +102,7 @@
 				D7831DC225815025001827CF /* BrightnessViewController.swift */,
 				D7831DC8258156EB001827CF /* ProximityViewController.swift */,
 			);
-			path = Views;
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 		D7831D98258100CC001827CF /* Common */ = {
@@ -141,6 +138,17 @@
 				D7831DB225812B4F001827CF /* KeyValue.swift */,
 			);
 			path = Entity;
+			sourceTree = "<group>";
+		};
+		D7831DCC25815ACC001827CF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D711991B257D0A6A00395189 /* Main.storyboard */,
+				D7119920257D0A6C00395189 /* LaunchScreen.storyboard */,
+				D7831D98258100CC001827CF /* Common */,
+				D7831D942580F986001827CF /* ViewControllers */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
