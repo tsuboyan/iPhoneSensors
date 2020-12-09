@@ -21,6 +21,7 @@
 		D7831DB725813546001827CF /* MotionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7831DB625813546001827CF /* MotionViewController.swift */; };
 		D7831DBA25813D64001827CF /* PedometerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7831DB925813D64001827CF /* PedometerViewController.swift */; };
 		D7831DBD25814219001827CF /* NSNumber+ToString.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7831DBC25814219001827CF /* NSNumber+ToString.swift */; };
+		D7831DC025814B09001827CF /* AltimeterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7831DBF25814B09001827CF /* AltimeterViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		D7831DB625813546001827CF /* MotionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionViewController.swift; sourceTree = "<group>"; };
 		D7831DB925813D64001827CF /* PedometerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PedometerViewController.swift; sourceTree = "<group>"; };
 		D7831DBC25814219001827CF /* NSNumber+ToString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSNumber+ToString.swift"; sourceTree = "<group>"; };
+		D7831DBF25814B09001827CF /* AltimeterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AltimeterViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 				D7831DA625810733001827CF /* LocationViewController.swift */,
 				D7831DB625813546001827CF /* MotionViewController.swift */,
 				D7831DB925813D64001827CF /* PedometerViewController.swift */,
+				D7831DBF25814B09001827CF /* AltimeterViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -202,6 +205,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7831DC025814B09001827CF /* AltimeterViewController.swift in Sources */,
 				D7831DA725810733001827CF /* LocationViewController.swift in Sources */,
 				D711991A257D0A6A00395189 /* TopViewController.swift in Sources */,
 				D7831DB725813546001827CF /* MotionViewController.swift in Sources */,
