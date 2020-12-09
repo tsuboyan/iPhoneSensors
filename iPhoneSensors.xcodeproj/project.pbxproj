@@ -24,6 +24,7 @@
 		D7831DC025814B09001827CF /* AltimeterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7831DBF25814B09001827CF /* AltimeterViewController.swift */; };
 		D7831DC325815025001827CF /* BrightnessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7831DC225815025001827CF /* BrightnessViewController.swift */; };
 		D7831DC6258152F0001827CF /* CGFloat+ToString.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7831DC5258152F0001827CF /* CGFloat+ToString.swift */; };
+		D7831DC9258156EB001827CF /* ProximityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7831DC8258156EB001827CF /* ProximityViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		D7831DBF25814B09001827CF /* AltimeterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AltimeterViewController.swift; sourceTree = "<group>"; };
 		D7831DC225815025001827CF /* BrightnessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrightnessViewController.swift; sourceTree = "<group>"; };
 		D7831DC5258152F0001827CF /* CGFloat+ToString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGFloat+ToString.swift"; sourceTree = "<group>"; };
+		D7831DC8258156EB001827CF /* ProximityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProximityViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 				D7831DB925813D64001827CF /* PedometerViewController.swift */,
 				D7831DBF25814B09001827CF /* AltimeterViewController.swift */,
 				D7831DC225815025001827CF /* BrightnessViewController.swift */,
+				D7831DC8258156EB001827CF /* ProximityViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -219,6 +222,7 @@
 				D7831DC6258152F0001827CF /* CGFloat+ToString.swift in Sources */,
 				D7119916257D0A6A00395189 /* AppDelegate.swift in Sources */,
 				D7831DBD25814219001827CF /* NSNumber+ToString.swift in Sources */,
+				D7831DC9258156EB001827CF /* ProximityViewController.swift in Sources */,
 				D7119918257D0A6A00395189 /* SceneDelegate.swift in Sources */,
 				D7831DAC25810ACA001827CF /* UIView+Xib.swift in Sources */,
 				D7831DC325815025001827CF /* BrightnessViewController.swift in Sources */,
