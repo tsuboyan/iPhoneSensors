@@ -9,21 +9,31 @@
 /* Begin PBXBuildFile section */
 		D7119916257D0A6A00395189 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7119915257D0A6A00395189 /* AppDelegate.swift */; };
 		D7119918257D0A6A00395189 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7119917257D0A6A00395189 /* SceneDelegate.swift */; };
-		D711991A257D0A6A00395189 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7119919257D0A6A00395189 /* ViewController.swift */; };
+		D711991A257D0A6A00395189 /* TopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7119919257D0A6A00395189 /* TopViewController.swift */; };
 		D711991D257D0A6A00395189 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D711991B257D0A6A00395189 /* Main.storyboard */; };
 		D711991F257D0A6C00395189 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D711991E257D0A6C00395189 /* Assets.xcassets */; };
 		D7119922257D0A6C00395189 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7119920257D0A6C00395189 /* LaunchScreen.storyboard */; };
+		D7831DA125810330001827CF /* KeyValueCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7831D9F25810330001827CF /* KeyValueCell.swift */; };
+		D7831DA225810330001827CF /* KeyValueCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7831DA025810330001827CF /* KeyValueCell.xib */; };
+		D7831DA725810733001827CF /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7831DA625810733001827CF /* LocationViewController.swift */; };
+		D7831DAC25810ACA001827CF /* UIView+Xib.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7831DAB25810ACA001827CF /* UIView+Xib.swift */; };
+		D7831DB325812B4F001827CF /* KeyValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7831DB225812B4F001827CF /* KeyValue.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D7119912257D0A6A00395189 /* iPhoneSensors.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iPhoneSensors.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7119915257D0A6A00395189 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D7119917257D0A6A00395189 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D7119919257D0A6A00395189 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D7119919257D0A6A00395189 /* TopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopViewController.swift; sourceTree = "<group>"; };
 		D711991C257D0A6A00395189 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D711991E257D0A6C00395189 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D7119921257D0A6C00395189 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D7119923257D0A6C00395189 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D7831D9F25810330001827CF /* KeyValueCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyValueCell.swift; sourceTree = "<group>"; };
+		D7831DA025810330001827CF /* KeyValueCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KeyValueCell.xib; sourceTree = "<group>"; };
+		D7831DA625810733001827CF /* LocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
+		D7831DAB25810ACA001827CF /* UIView+Xib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Xib.swift"; sourceTree = "<group>"; };
+		D7831DB225812B4F001827CF /* KeyValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyValue.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +66,60 @@
 		D7119914257D0A6A00395189 /* iPhoneSensors */ = {
 			isa = PBXGroup;
 			children = (
+				D7831DAA25810AAD001827CF /* Extensions */,
+				D7831DB025812B10001827CF /* Models */,
+				D7831D942580F986001827CF /* Views */,
 				D7119915257D0A6A00395189 /* AppDelegate.swift */,
 				D7119917257D0A6A00395189 /* SceneDelegate.swift */,
-				D7119919257D0A6A00395189 /* ViewController.swift */,
-				D711991B257D0A6A00395189 /* Main.storyboard */,
 				D711991E257D0A6C00395189 /* Assets.xcassets */,
 				D7119920257D0A6C00395189 /* LaunchScreen.storyboard */,
 				D7119923257D0A6C00395189 /* Info.plist */,
 			);
 			path = iPhoneSensors;
+			sourceTree = "<group>";
+		};
+		D7831D942580F986001827CF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D7831D98258100CC001827CF /* Common */,
+				D7119919257D0A6A00395189 /* TopViewController.swift */,
+				D711991B257D0A6A00395189 /* Main.storyboard */,
+				D7831DA625810733001827CF /* LocationViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D7831D98258100CC001827CF /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				D7831D9F25810330001827CF /* KeyValueCell.swift */,
+				D7831DA025810330001827CF /* KeyValueCell.xib */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		D7831DAA25810AAD001827CF /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D7831DAB25810ACA001827CF /* UIView+Xib.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		D7831DB025812B10001827CF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D7831DB125812B2B001827CF /* Entity */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D7831DB125812B2B001827CF /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				D7831DB225812B4F001827CF /* KeyValue.swift */,
+			);
+			path = Entity;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,6 +179,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7831DA225810330001827CF /* KeyValueCell.xib in Resources */,
 				D7119922257D0A6C00395189 /* LaunchScreen.storyboard in Resources */,
 				D711991F257D0A6C00395189 /* Assets.xcassets in Resources */,
 				D711991D257D0A6A00395189 /* Main.storyboard in Resources */,
@@ -137,9 +193,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D711991A257D0A6A00395189 /* ViewController.swift in Sources */,
+				D7831DA725810733001827CF /* LocationViewController.swift in Sources */,
+				D711991A257D0A6A00395189 /* TopViewController.swift in Sources */,
 				D7119916257D0A6A00395189 /* AppDelegate.swift in Sources */,
 				D7119918257D0A6A00395189 /* SceneDelegate.swift in Sources */,
+				D7831DAC25810ACA001827CF /* UIView+Xib.swift in Sources */,
+				D7831DA125810330001827CF /* KeyValueCell.swift in Sources */,
+				D7831DB325812B4F001827CF /* KeyValue.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
