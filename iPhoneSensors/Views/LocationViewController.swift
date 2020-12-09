@@ -54,6 +54,8 @@ extension LocationViewController: CLLocationManagerDelegate {
         
         if let floor = location.floor {
             locationInfomations.append(KeyValue(key: "階数:", value: "\(floor)"))
+        } else {
+            locationInfomations.append(KeyValue(key: "階数:", value: "N/A"))
         }
         collectionView.reloadData()
     }
