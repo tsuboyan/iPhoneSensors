@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C6292A428C8B06E006AB0AE /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C6292A228C8B06E006AB0AE /* Interface.storyboard */; };
+		1C6292A628C8B06F006AB0AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C6292A528C8B06F006AB0AE /* Assets.xcassets */; };
+		1C6292AC28C8B06F006AB0AE /* AppleWatchSensors WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 1C6292AB28C8B06F006AB0AE /* AppleWatchSensors WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		1C6292B128C8B06F006AB0AE /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C6292B028C8B06F006AB0AE /* InterfaceController.swift */; };
+		1C6292B328C8B06F006AB0AE /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C6292B228C8B06F006AB0AE /* ExtensionDelegate.swift */; };
+		1C6292B528C8B06F006AB0AE /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C6292B428C8B06F006AB0AE /* ComplicationController.swift */; };
+		1C6292B728C8B070006AB0AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C6292B628C8B070006AB0AE /* Assets.xcassets */; };
+		1C6292BB28C8B070006AB0AE /* AppleWatchSensors.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 1C6292A028C8B06E006AB0AE /* AppleWatchSensors.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		D7119916257D0A6A00395189 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7119915257D0A6A00395189 /* AppDelegate.swift */; };
 		D7119918257D0A6A00395189 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7119917257D0A6A00395189 /* SceneDelegate.swift */; };
 		D711991A257D0A6A00395189 /* TopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7119919257D0A6A00395189 /* TopViewController.swift */; };
@@ -27,7 +35,58 @@
 		D7831DC9258156EB001827CF /* ProximityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7831DC8258156EB001827CF /* ProximityViewController.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		1C6292AD28C8B06F006AB0AE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D711990A257D0A6A00395189 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1C6292AA28C8B06F006AB0AE;
+			remoteInfo = "AppleWatchSensors WatchKit Extension";
+		};
+		1C6292B928C8B070006AB0AE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D711990A257D0A6A00395189 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1C62929F28C8B06E006AB0AE;
+			remoteInfo = AppleWatchSensors;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1C6292BC28C8B070006AB0AE /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				1C6292BB28C8B070006AB0AE /* AppleWatchSensors.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1C6292BF28C8B070006AB0AE /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				1C6292AC28C8B06F006AB0AE /* AppleWatchSensors WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		1C6292A028C8B06E006AB0AE /* AppleWatchSensors.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppleWatchSensors.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C6292A328C8B06E006AB0AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		1C6292A528C8B06F006AB0AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1C6292AB28C8B06F006AB0AE /* AppleWatchSensors WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "AppleWatchSensors WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C6292B028C8B06F006AB0AE /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		1C6292B228C8B06F006AB0AE /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		1C6292B428C8B06F006AB0AE /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		1C6292B628C8B070006AB0AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1C6292B828C8B070006AB0AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D7119912257D0A6A00395189 /* iPhoneSensors.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iPhoneSensors.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7119915257D0A6A00395189 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D7119917257D0A6A00395189 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,6 +110,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		1C6292A828C8B06F006AB0AE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D711990F257D0A6A00395189 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -61,10 +127,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1C6292A128C8B06E006AB0AE /* AppleWatchSensors */ = {
+			isa = PBXGroup;
+			children = (
+				1C6292A228C8B06E006AB0AE /* Interface.storyboard */,
+				1C6292A528C8B06F006AB0AE /* Assets.xcassets */,
+			);
+			path = AppleWatchSensors;
+			sourceTree = "<group>";
+		};
+		1C6292AF28C8B06F006AB0AE /* AppleWatchSensors WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				1C6292B028C8B06F006AB0AE /* InterfaceController.swift */,
+				1C6292B228C8B06F006AB0AE /* ExtensionDelegate.swift */,
+				1C6292B428C8B06F006AB0AE /* ComplicationController.swift */,
+				1C6292B628C8B070006AB0AE /* Assets.xcassets */,
+				1C6292B828C8B070006AB0AE /* Info.plist */,
+			);
+			path = "AppleWatchSensors WatchKit Extension";
+			sourceTree = "<group>";
+		};
 		D7119909257D0A6A00395189 = {
 			isa = PBXGroup;
 			children = (
 				D7119914257D0A6A00395189 /* iPhoneSensors */,
+				1C6292A128C8B06E006AB0AE /* AppleWatchSensors */,
+				1C6292AF28C8B06F006AB0AE /* AppleWatchSensors WatchKit Extension */,
 				D7119913257D0A6A00395189 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -73,6 +162,8 @@
 			isa = PBXGroup;
 			children = (
 				D7119912257D0A6A00395189 /* iPhoneSensors.app */,
+				1C6292A028C8B06E006AB0AE /* AppleWatchSensors.app */,
+				1C6292AB28C8B06F006AB0AE /* AppleWatchSensors WatchKit Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -154,6 +245,40 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		1C62929F28C8B06E006AB0AE /* AppleWatchSensors */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1C6292C328C8B070006AB0AE /* Build configuration list for PBXNativeTarget "AppleWatchSensors" */;
+			buildPhases = (
+				1C62929E28C8B06E006AB0AE /* Resources */,
+				1C6292BF28C8B070006AB0AE /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1C6292AE28C8B06F006AB0AE /* PBXTargetDependency */,
+			);
+			name = AppleWatchSensors;
+			productName = AppleWatchSensors;
+			productReference = 1C6292A028C8B06E006AB0AE /* AppleWatchSensors.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		1C6292AA28C8B06F006AB0AE /* AppleWatchSensors WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1C6292C228C8B070006AB0AE /* Build configuration list for PBXNativeTarget "AppleWatchSensors WatchKit Extension" */;
+			buildPhases = (
+				1C6292A728C8B06F006AB0AE /* Sources */,
+				1C6292A828C8B06F006AB0AE /* Frameworks */,
+				1C6292A928C8B06F006AB0AE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "AppleWatchSensors WatchKit Extension";
+			productName = "AppleWatchSensors WatchKit Extension";
+			productReference = 1C6292AB28C8B06F006AB0AE /* AppleWatchSensors WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
 		D7119911257D0A6A00395189 /* iPhoneSensors */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = D7119926257D0A6C00395189 /* Build configuration list for PBXNativeTarget "iPhoneSensors" */;
@@ -161,10 +286,12 @@
 				D711990E257D0A6A00395189 /* Sources */,
 				D711990F257D0A6A00395189 /* Frameworks */,
 				D7119910257D0A6A00395189 /* Resources */,
+				1C6292BC28C8B070006AB0AE /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				1C6292BA28C8B070006AB0AE /* PBXTargetDependency */,
 			);
 			name = iPhoneSensors;
 			productName = iPhoneSensors;
@@ -177,9 +304,15 @@
 		D711990A257D0A6A00395189 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1200;
+				LastSwiftUpdateCheck = 1340;
 				LastUpgradeCheck = 1200;
 				TargetAttributes = {
+					1C62929F28C8B06E006AB0AE = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					1C6292AA28C8B06F006AB0AE = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
 					D7119911257D0A6A00395189 = {
 						CreatedOnToolsVersion = 12.0.1;
 					};
@@ -199,11 +332,30 @@
 			projectRoot = "";
 			targets = (
 				D7119911257D0A6A00395189 /* iPhoneSensors */,
+				1C62929F28C8B06E006AB0AE /* AppleWatchSensors */,
+				1C6292AA28C8B06F006AB0AE /* AppleWatchSensors WatchKit Extension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		1C62929E28C8B06E006AB0AE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C6292A628C8B06F006AB0AE /* Assets.xcassets in Resources */,
+				1C6292A428C8B06E006AB0AE /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1C6292A928C8B06F006AB0AE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C6292B728C8B070006AB0AE /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D7119910257D0A6A00395189 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -218,6 +370,16 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		1C6292A728C8B06F006AB0AE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C6292B328C8B06F006AB0AE /* ExtensionDelegate.swift in Sources */,
+				1C6292B128C8B06F006AB0AE /* InterfaceController.swift in Sources */,
+				1C6292B528C8B06F006AB0AE /* ComplicationController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D711990E257D0A6A00395189 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -241,7 +403,28 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		1C6292AE28C8B06F006AB0AE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1C6292AA28C8B06F006AB0AE /* AppleWatchSensors WatchKit Extension */;
+			targetProxy = 1C6292AD28C8B06F006AB0AE /* PBXContainerItemProxy */;
+		};
+		1C6292BA28C8B070006AB0AE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1C62929F28C8B06E006AB0AE /* AppleWatchSensors */;
+			targetProxy = 1C6292B928C8B070006AB0AE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
+		1C6292A228C8B06E006AB0AE /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1C6292A328C8B06E006AB0AE /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
 		D711991B257D0A6A00395189 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -261,6 +444,122 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		1C6292BD28C8B070006AB0AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = W9QV9753NK;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = AppleWatchSensors_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = AppleWatchSensors;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = net.rirex.iPhoneSensors;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = net.rirex.iPhoneSensors.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Debug;
+		};
+		1C6292BE28C8B070006AB0AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = W9QV9753NK;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = AppleWatchSensors_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = AppleWatchSensors;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = net.rirex.iPhoneSensors;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = net.rirex.iPhoneSensors.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Release;
+		};
+		1C6292C028C8B070006AB0AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = W9QV9753NK;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "AppleWatchSensors WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "AppleWatchSensors WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKExtensionDelegateClassName = "$(PRODUCT_MODULE_NAME).ExtensionDelegate";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = net.rirex.iPhoneSensors.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Debug;
+		};
+		1C6292C128C8B070006AB0AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = W9QV9753NK;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "AppleWatchSensors WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "AppleWatchSensors WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKExtensionDelegateClassName = "$(PRODUCT_MODULE_NAME).ExtensionDelegate";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = net.rirex.iPhoneSensors.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Release;
+		};
 		D7119924257D0A6C00395189 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -418,6 +717,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		1C6292C228C8B070006AB0AE /* Build configuration list for PBXNativeTarget "AppleWatchSensors WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1C6292C028C8B070006AB0AE /* Debug */,
+				1C6292C128C8B070006AB0AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1C6292C328C8B070006AB0AE /* Build configuration list for PBXNativeTarget "AppleWatchSensors" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1C6292BD28C8B070006AB0AE /* Debug */,
+				1C6292BE28C8B070006AB0AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		D711990D257D0A6A00395189 /* Build configuration list for PBXProject "iPhoneSensors" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
