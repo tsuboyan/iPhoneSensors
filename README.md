@@ -5,7 +5,8 @@ iPhone Sensors
 
 
 # Support Sensors
-- LiDAR Sensor
+
+## iOS
 - Motion Sensor
 - GPS Sensor
 - Pedometer Sensor
@@ -13,6 +14,11 @@ iPhone Sensors
 - Proximity Sensor
 - Brightness Sensor
 
+## WatchOS
+- Motion Sensor
+- GPS Sensor
+- Pedometer Sensor
+- Altitude Sensor
 
 # Requirements
 Swift 5.0 / iOS 14.0+
