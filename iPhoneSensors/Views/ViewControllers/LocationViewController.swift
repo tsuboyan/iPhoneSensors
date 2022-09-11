@@ -53,7 +53,7 @@ extension LocationViewController: CLLocationManagerDelegate {
         locationInfomations.append(KeyValue(key: "速度の精度:", value: "\(location.speedAccuracy)", unit: "meter/sec"))
         
         if let floor = location.floor {
-            locationInfomations.append(KeyValue(key: "階数:", value: "\(floor)"))
+            locationInfomations.append(KeyValue(key: "階数:", value: "\(floor.level)"))
         } else {
             locationInfomations.append(KeyValue(key: "階数:", value: "N/A"))
         }
