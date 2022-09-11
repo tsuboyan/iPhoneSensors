@@ -15,6 +15,11 @@
 		1C6292B528C8B06F006AB0AE /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C6292B428C8B06F006AB0AE /* ComplicationController.swift */; };
 		1C6292B728C8B070006AB0AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C6292B628C8B070006AB0AE /* Assets.xcassets */; };
 		1C6292BB28C8B070006AB0AE /* AppleWatchSensors.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 1C6292A028C8B06E006AB0AE /* AppleWatchSensors.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		1C6292C528CC42BC006AB0AE /* LocationInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C6292C428CC42BC006AB0AE /* LocationInterfaceController.swift */; };
+		1C6292C728CC6CF5006AB0AE /* MotionInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C6292C628CC6CF5006AB0AE /* MotionInterfaceController.swift */; };
+		1C6292C928CCAA2E006AB0AE /* AltimeterInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C6292C828CCAA2E006AB0AE /* AltimeterInterfaceController.swift */; };
+		1C6292CB28CCAFFB006AB0AE /* PedometerInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C6292CA28CCAFFB006AB0AE /* PedometerInterfaceController.swift */; };
+		1C6292CD28CCB71E006AB0AE /* HealthcareInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C6292CC28CCB71E006AB0AE /* HealthcareInterfaceController.swift */; };
 		D7119916257D0A6A00395189 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7119915257D0A6A00395189 /* AppDelegate.swift */; };
 		D7119918257D0A6A00395189 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7119917257D0A6A00395189 /* SceneDelegate.swift */; };
 		D711991A257D0A6A00395189 /* TopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7119919257D0A6A00395189 /* TopViewController.swift */; };
@@ -87,6 +92,11 @@
 		1C6292B428C8B06F006AB0AE /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
 		1C6292B628C8B070006AB0AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1C6292B828C8B070006AB0AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1C6292C428CC42BC006AB0AE /* LocationInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationInterfaceController.swift; sourceTree = "<group>"; };
+		1C6292C628CC6CF5006AB0AE /* MotionInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionInterfaceController.swift; sourceTree = "<group>"; };
+		1C6292C828CCAA2E006AB0AE /* AltimeterInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AltimeterInterfaceController.swift; sourceTree = "<group>"; };
+		1C6292CA28CCAFFB006AB0AE /* PedometerInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PedometerInterfaceController.swift; sourceTree = "<group>"; };
+		1C6292CC28CCB71E006AB0AE /* HealthcareInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthcareInterfaceController.swift; sourceTree = "<group>"; };
 		D7119912257D0A6A00395189 /* iPhoneSensors.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iPhoneSensors.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7119915257D0A6A00395189 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D7119917257D0A6A00395189 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -139,13 +149,26 @@
 		1C6292AF28C8B06F006AB0AE /* AppleWatchSensors WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
-				1C6292B028C8B06F006AB0AE /* InterfaceController.swift */,
+				1C6292CE28CD8D83006AB0AE /* InterfaceControllers */,
 				1C6292B228C8B06F006AB0AE /* ExtensionDelegate.swift */,
 				1C6292B428C8B06F006AB0AE /* ComplicationController.swift */,
 				1C6292B628C8B070006AB0AE /* Assets.xcassets */,
 				1C6292B828C8B070006AB0AE /* Info.plist */,
+				1C6292CC28CCB71E006AB0AE /* HealthcareInterfaceController.swift */,
 			);
 			path = "AppleWatchSensors WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		1C6292CE28CD8D83006AB0AE /* InterfaceControllers */ = {
+			isa = PBXGroup;
+			children = (
+				1C6292B028C8B06F006AB0AE /* InterfaceController.swift */,
+				1C6292C428CC42BC006AB0AE /* LocationInterfaceController.swift */,
+				1C6292C628CC6CF5006AB0AE /* MotionInterfaceController.swift */,
+				1C6292C828CCAA2E006AB0AE /* AltimeterInterfaceController.swift */,
+				1C6292CA28CCAFFB006AB0AE /* PedometerInterfaceController.swift */,
+			);
+			path = InterfaceControllers;
 			sourceTree = "<group>";
 		};
 		D7119909257D0A6A00395189 = {
@@ -376,7 +399,12 @@
 			files = (
 				1C6292B328C8B06F006AB0AE /* ExtensionDelegate.swift in Sources */,
 				1C6292B128C8B06F006AB0AE /* InterfaceController.swift in Sources */,
+				1C6292C528CC42BC006AB0AE /* LocationInterfaceController.swift in Sources */,
+				1C6292C928CCAA2E006AB0AE /* AltimeterInterfaceController.swift in Sources */,
+				1C6292CD28CCB71E006AB0AE /* HealthcareInterfaceController.swift in Sources */,
+				1C6292CB28CCAFFB006AB0AE /* PedometerInterfaceController.swift in Sources */,
 				1C6292B528C8B06F006AB0AE /* ComplicationController.swift in Sources */,
+				1C6292C728CC6CF5006AB0AE /* MotionInterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

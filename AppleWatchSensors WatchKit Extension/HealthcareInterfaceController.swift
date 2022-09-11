@@ -1,35 +1,30 @@
 //
-//  InterfaceController.swift
+//  HealthcareInterfaceController.swift
 //  AppleWatchSensors WatchKit Extension
 //
-//  Created by Atsushi Otsubo on 2022/09/07.
+//  Created by Atsushi Otsubo on 2022/09/10.
 //
 
 import WatchKit
 import Foundation
-import CoreMotion
 
 
-class InterfaceController: WKInterfaceController {
+class HealthcareInterfaceController: WKInterfaceController {
 
-    let motionManager = CMMotionManager()
-    
     override func awake(withContext context: Any?) {
+        super.awake(withContext: context)
+        
         // Configure interface objects here.
     }
-    
+
     override func willActivate() {
         // This method is called when watch view controller is about to be visible to user
-        motionManager.startDeviceMotionUpdates(to: .main, withHandler: { motion,_ in
-            if let motion = motion {
-                print(motion)
-            }
-        })
+        super.willActivate()
     }
-    
+
     override func didDeactivate() {
         // This method is called when watch view controller is no longer visible
-        motionManager.stopDeviceMotionUpdates()
+        super.didDeactivate()
     }
 
 }

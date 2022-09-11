@@ -9,9 +9,89 @@
         <!--Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="AppleWatchSensors" customModuleProvider="target"/>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="AppleWatchSensors" customModuleProvider="target">
+                    <items>
+                        <button width="1" alignment="left" title="位置情報" id="rG4-cM-6DV">
+                            <connections>
+                                <segue destination="kzR-mc-eVl" kind="push" id="djz-Lv-dd2"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="気圧 (高度)" id="m17-EE-og1">
+                            <connections>
+                                <segue destination="8nz-xz-9hD" kind="push" id="2Ey-Xm-iYE"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="モーション" id="ksQ-HL-6fc">
+                            <connections>
+                                <segue destination="ePv-T7-WZS" kind="push" id="lJa-jB-I1N"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="歩数" id="YqN-6K-hMY">
+                            <connections>
+                                <segue destination="Jhe-OO-gVm" kind="push" id="haZ-Ip-Ct0"/>
+                            </connections>
+                        </button>
+                    </items>
+                </controller>
             </objects>
             <point key="canvasLocation" x="-16" y="9"/>
+        </scene>
+        <!--Location Interface Controller-->
+        <scene sceneID="iNb-Rb-0qx">
+            <objects>
+                <controller id="kzR-mc-eVl" customClass="LocationInterfaceController" customModule="AppleWatchSensors_WatchKit_Extension">
+                    <items>
+                        <label height="19" alignment="left" text="取得中..." numberOfLines="0" id="2kE-Ql-KV1"/>
+                        <map height="100" alignment="left" id="tQC-EP-g3p"/>
+                    </items>
+                    <connections>
+                        <outlet property="locationInfoLabel" destination="2kE-Ql-KV1" id="qAo-U1-jg0"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="392" y="9"/>
+        </scene>
+        <!--Motion Interface Controller-->
+        <scene sceneID="eSY-os-gtJ">
+            <objects>
+                <controller id="ePv-T7-WZS" customClass="MotionInterfaceController" customModule="AppleWatchSensors_WatchKit_Extension">
+                    <items>
+                        <label alignment="left" text="取得中..." numberOfLines="0" id="lVm-Xa-DPH"/>
+                    </items>
+                    <connections>
+                        <outlet property="motionInfoLabel" destination="lVm-Xa-DPH" id="f8R-Bd-zdg"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="392" y="333"/>
+        </scene>
+        <!--Pedometer Interface Controller-->
+        <scene sceneID="3xr-G8-sIG">
+            <objects>
+                <controller id="Jhe-OO-gVm" customClass="PedometerInterfaceController" customModule="AppleWatchSensors_WatchKit_Extension">
+                    <items>
+                        <label alignment="left" text="取得中..." numberOfLines="0" id="JZ7-ln-ugh"/>
+                    </items>
+                    <connections>
+                        <outlet property="pedometerLabel" destination="JZ7-ln-ugh" id="Fm8-q3-Rw0"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="392" y="654"/>
+        </scene>
+        <!--Altimeter Interface Controller-->
+        <scene sceneID="HHB-5D-k4W">
+            <objects>
+                <controller id="8nz-xz-9hD" customClass="AltimeterInterfaceController" customModule="AppleWatchSensors_WatchKit_Extension">
+                    <items>
+                        <label alignment="left" text="取得中..." numberOfLines="0" id="xj0-KA-meH"/>
+                    </items>
+                    <connections>
+                        <outlet property="altitudeLabel" destination="xj0-KA-meH" id="hLZ-AG-ymI"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="392" y="986"/>
         </scene>
     </scenes>
 </document>
